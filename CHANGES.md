@@ -1,8 +1,6 @@
-# MAJU mobile layout patch
+# MAJU CRM - Data management update
 
-Based on the uploaded `style(1).css` and `index(1).html` (renamed to their actual repository filenames).
+- `app.js`: Removed the Handover checklist from Help. Added Data management panel with backup export and guarded Clear all CRM data action. In Firebase mode deletes partner, case and meeting documents in batches, leaving `members` and Authentication untouched. In local mode clears only the local CRM data.
+- `index.html`: Cache-busts app.js on mobile and desktop.
 
-- `style.css`: add mobile-only responsive overrides for directories, headings, forms, modal, calendar, navigation and overflow. Replace decorative star emoji with an inline SVG drawn using four crossed lines, avoiding iOS emoji substitution. Keep the existing art-school styling and palette.
-- `index.html`: version the CSS and JS URLs to refresh cached assets after deployment.
-
-No changes to `app.js`, Firebase configuration, security rules or stored records.
+**Warning:** Deletion is permanent without a previously exported backup. Any approved member can perform this operation under current Firestore rules. Consider admin-only permissions before real team use.
