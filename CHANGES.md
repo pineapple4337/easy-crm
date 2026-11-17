@@ -1,11 +1,9 @@
-# MAJU CRM — Deduplicated actions
+# MAJU CRM sortable lists
 
-Changed files: `app.js`, `index.html`.
+- Click Partners/Cases column headings to sort; click again to reverse.
+- Date fields sort chronologically; missing dates are last.
+- Priority tiers sort numerically (Tier 1, 2, 3).
+- Mobile gets a sort dropdown and direction toggle.
+- No Firebase schema or data changes.
 
-- Removed the duplicate **Export backup** button from Data management.
-- Removed duplicate **Export JSON**, **Import JSON**, and **Import CSV** buttons from the Partners toolbar.
-- Kept one set of import/export controls under **Help → Importing and exporting**, including the four distinct CSV export actions.
-- Kept **Clear all CRM data** under Data management.
-- Updated JavaScript cache version in `index.html`.
-
-No changes to Firestore, authentication, or data structures.
+Modified: `app.js`, `index.html`. Updated `style.css` using the mobile-optimised Art School theme as its base. Replace the existing stylesheet.

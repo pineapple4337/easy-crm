@@ -93,3 +93,11 @@ html,body{max-width:100%;overflow-x:clip} .app,.main,.panel,.directory,.detail-g
   .auth{padding:12px}.auth .panel{width:100%;max-width:420px}
 }
 @media(max-width:360px){.main{padding-left:9px;padding-right:9px}.panel{padding:11px}.directory-row.partners-columns,.directory-row.cases-columns{padding:10px 8px}.mobile-nav button{font-size:8px}}
+
+/* Sortable directory headings */
+.sort-heading{display:inline-flex;align-items:center;gap:5px;justify-content:flex-start;min-width:0;width:100%;padding:4px 0;background:transparent;border:0;color:inherit;font:inherit;letter-spacing:inherit;text-align:left;text-transform:inherit;cursor:pointer}
+.sort-heading span{font-size:15px;line-height:1;opacity:.7}
+.sort-heading.sorted span{opacity:1}
+.sort-heading:hover,.sort-heading:focus-visible{text-decoration:underline;text-underline-offset:3px;outline-offset:3px}
+.mobile-sort{display:none}
+@media(max-width:620px){.mobile-sort{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:12px 0 18px}.mobile-sort label{margin:0;font-size:12px}.mobile-sort select{flex:1 1 130px;min-width:0;width:auto;font-size:16px}.mobile-sort button{font-size:11px;padding:10px;white-space:nowrap}}
