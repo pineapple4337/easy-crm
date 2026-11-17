@@ -1,7 +1,8 @@
-# MAJU CRM — Art School Edition
+# MAJU mobile layout patch
 
-Changed: `style.css` only.
+Based on the uploaded `style(1).css` and `index(1).html` (renamed to their actual repository filenames).
 
-Replaces the restrained design with intentionally chaotic editorial typography, acid-lime and pink panels, burgundy sidebar, sharp borders, oversized headings, rotating blocks and chunky offset shadows. No changes to JavaScript, Firebase, imports, or data.
+- `style.css`: add mobile-only responsive overrides for directories, headings, forms, modal, calendar, navigation and overflow. Replace decorative star emoji with an inline SVG drawn using four crossed lines, avoiding iOS emoji substitution. Keep the existing art-school styling and palette.
+- `index.html`: version the CSS and JS URLs to refresh cached assets after deployment.
 
-Unzip into the existing repository root, replacing `style.css`. Refresh the browser (hard refresh if cached).
+No changes to `app.js`, Firebase configuration, security rules or stored records.
